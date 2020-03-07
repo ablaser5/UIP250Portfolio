@@ -5,5 +5,8 @@ our websites to run faster. My task was to enable this on a single server to com
 To do this, I had to write configuration files for the Apache webserver and configure CloudFront on Amazon Web Services. 
 
 Below are the files in relation to this work sample:
+
 Apache Configuration: 000-default.conf
-CloudFront Configuration Image: CloudFrontConf.png
+CloudFront Configuration Image 1: cloudfront_1.png
+CloudFront Configuration Image 2: cloudfront_2.png
+CloudFront Configuration Image 3: cloudfront_3.png
