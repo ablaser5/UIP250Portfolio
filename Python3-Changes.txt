@@ -1,0 +1,67 @@
+Steps to Convert Portal to Python 3
+
+1. Backup the Prod Server
+	- MySQL Database: Keep a copy of the database
+	- Files: keep a copy of the-client-portal directory
+
+2. Delete virtual environments and install new packages with pip3 in a new virtual environment
+
+	Problem Packages: (For problematic packages, remove from requirements.txt before running pip3)
+		 - email=4.0.2
+		 - MySQL-python=1.2.5 **FIX** -> pip3 install mysqlclient
+
+3. Run these commands
+	# Install a Python 3 Virtual Environment
+	python3 -m venv venv
+
+	# Install Packages
+	pip3 install -r requirements.txt
+
+	# Remove mod_wsgi for python 2
+	sudo apt-get remove libapache2-mod-wsgi
+
+	# Install mod_wsgi for python 3
+	sudo apt-get install libapache2-mod-wsgi-py3
+
+
+4. Run 2to3 on the-client-portal directory to convert whatever is possible
+	
+	# Run 2to3 with the following:
+	2to3 --output-dir=/python3Version/ -W -n the-client-portal
+
+5. Move the app directory from /python3Version to the /var/www/the-client-portal
+	cd /python3Version
+	mv app /var/www/the-client-portal
+
+6. Move the sql-tools directory from /python3Version to the /var/www/the-client-portal
+	cd /python3Version
+	mv sql-tools /var/www/the-client-portal
+
+7. Check for other Errors: (When testing these are some I got)
+	- Indentation Errors
+	- Try, except syntax errors
+
+8. Fix Imports 
+	Example: SyntaxError: import * only allowed at module level
+	- Go through and fix these. 
+	* Implicit Relative Imports not valid in python3 (no from .app import *)
+
+9. Final Sweep
+	- Go through the site and hunt for 500 errors caused by packages or common errors.
+	Packages:
+		- pip3 install twilio
+		- delete "from compiler.pycodegen import EXCEPT" (main.views)
+		- pip3 install gpsphoto
+		- pip3 install mysqlclient
+		- delete "from _mysql import result" (stripe_webhooks.views)
+		- Widgets sort function does not work
+		- pip3 install graphqlclient
+	Some Common Errors from my Local Install:
+		- decode() changed from 2 to 3
+		- * can only be imported at a module level
+		- !! Menu !! - Update menu_html() in models.py or the second level nav items won't show. 
+		- "Report Events" tab on menu says "Not Found" when clicked
+
+	run in MySQL: SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
+
+Should Be Set!		
