@@ -2,7 +2,13 @@ Work Sample 2:
 
 This task was to enable a technology on Amazon Web Services called 'CloudFront.' This is what is called a caching service and allows
 our websites to run faster. My task was to enable this on a single server to come up with the best configuration to use on all of our websites.
-To do this, I had to write configuration files for the Apache webserver and configure CloudFront on Amazon Web Services. 
+To do this, I had to write configuration files for the Apache webserver and configure CloudFront on Amazon Web Services.
+
+This task relates to my career goals because it is a configuration with Amazon Web Services as well as Linux Servers. Amazon
+Web Services is widely used in the industry as a cloud hosting provider and being able to configure these projects will come
+in handy in development, but also helpful in my job search because a lot of companies look for experience with Amazon Web
+Services. This task I actually had to call support for because the configuration was causing a lot of issues and there were no
+good guides online, so I actually resolved an issue by using Amazon's support system. 
 
 Below are the files in relation to this work sample:
 
