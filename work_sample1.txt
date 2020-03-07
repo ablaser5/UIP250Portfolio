@@ -1,11 +1,10 @@
 Work Sample 1:
 
-This sample was the main project I worked on over the course of this quarter. My task was to convert the back-end of our website to
-use a newer version of the python programming language, python 3. This has been a needed project at our company since python 2
-(the current version we use) is being phased out of development. For this task, I put together a list of steps that need to be taken in
-order to perform these on our production server. To do this, I configured a new Ubuntu (Linux) server on Amazon Web Services with a database
-and our existing website code. Then I worked out the necessary steps through research and came up with a complete process that we will run 
-on our main server to implement these changes.
+This sample was the main project I worked on over the course of this quarter. My task was to convert the back-end of our website to use a newer version of the python programming language, python 3. This has been a needed project at our company since python 2 (the current version we use) is being phased out of development. For this task, I put together a list of steps that need to be taken in order to perform these on our production server. To do this, I configured a new Ubuntu (Linux) server on Amazon Web Services with a database and our existing website code. Then I worked out the necessary steps through research and came up with a complete process that we will run on our main server to implement these changes.
+
+This task relates to my career goals because this is working directly with a linux server as well as the python programming
+language. On linux, the correct configuration is required to make the python work, but the python also needs to be modified
+to fit the newer version. This task was definitely the hardest and I had many setback such as: errors after converting the python code to version 3 and invalid packages or libraries that worked in the previous version but do not anymore.
 
 Below is the file that is the process I created this quarter:
 File: Python3-Changes.txt
