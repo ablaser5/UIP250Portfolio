@@ -5,5 +5,9 @@ Media can include images, videos, etc. This was hindering our developement becau
 To complete this assignment, I had to modify a file called an htaccess file which interacts with the Apache web server to allow or disallow
 certain content from being served up by the web server. 
 
+This task relates back to my career goals because it is working again with a Linux server configuration. This experience
+configuring these servers will be very helpful for companies since this is not typically taught in school. With this task, I
+had no issues. I was able to complete this project as planned after a little bit of research. 
+
 Below is the htaccess file I created to solve this problem:
 htaccess.txt
