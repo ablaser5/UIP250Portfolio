@@ -1,0 +1,9 @@
+Work Sample 3:
+
+For this assignment, I was tasked with reconfiguring one of our websites that uses wordpress to accept a larger file size for media.
+Media can include images, videos, etc. This was hindering our developement because we were unable to put certain content on our website.
+To complete this assignment, I had to modify a file called an htaccess file which interacts with the Apache web server to allow or disallow
+certain content from being served up by the web server. 
+
+Below is the htaccess file I created to solve this problem:
+htaccess.txt
