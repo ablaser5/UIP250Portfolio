@@ -1,0 +1,5 @@
+My background as a software developer started with web development, which I learned after high school. 
+I learned languages such as HTML/CSS, PHP, Python, and Javascript to develop both the front-end and the back-end of websites.
+During my studies at DePaul University, I excelled in my coursework which included courses in Artificial Intelligence, 
+Database Programming, Data Structures, Algorithms, and more. I developed language skills in Java and C while touching on the basics
+of newer technologies such as Scala and the Ethereum Blockchain. I also spent a lot of time with SQL in my Database coursework.
