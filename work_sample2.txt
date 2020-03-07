@@ -1,0 +1,9 @@
+Work Sample 2:
+
+This task was to enable a technology on Amazon Web Services called 'CloudFront.' This is what is called a caching service and allows
+our websites to run faster. My task was to enable this on a single server to come up with the best configuration to use on all of our websites.
+To do this, I had to write configuration files for the Apache webserver and configure CloudFront on Amazon Web Services. 
+
+Below are the files in relation to this work sample:
+Apache Configuration: 000-default.conf
+CloudFront Configuration Image: CloudFrontConf.png
